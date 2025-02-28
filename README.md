@@ -2,15 +2,20 @@
 
 ## Overview
 
-**MatchMage** is a tournament management system created for **Magic: The Gathering (MTG)**. With a huge player base and tournaments that can scale to over 7500 players, the competitive structure requires a robust system for implementing scalability, calculating tiebreaking, and real-time data management.
+### Solution
+**MatchMage** is a tournament management system solution created for **Magic: The Gathering (MTG)**. With a huge player base and tournaments that can scale to over 7500 players, the competitive structure requires a robust system for implementing **scalability**, calculating **tiebreaking**, and **real-time data management**.
 
 ![home1](images/home1.png)
 
-Users can create accounts, join, leave and view the interim and final results of tournaments. Admins can create, update, delete and manage the rounds of a tournament.
+### Features
+
+**Users** can create accounts, join, leave and view the interim and final results of tournaments. **Admins** can create, update, delete and manage the rounds of a tournament.
 
 ![home2](images/home2.png)
 
+
 ![login](images/login.png)
+
 
 ![flow](images/t2.png)
 
@@ -24,21 +29,19 @@ Deployment: GitLab, Docker, ECR, EKS, Fargate, EC2
 
 ## Match Making Algorithm: Swiss Pairing
 
-Round 1:
-Random pairing between player round 1
+**Round 1: Random pairing between players**
+- If there are an odd number of players, assign a bye ( free win ). For the first round it would be assigned randomly. For subsequent rounds, the bye will be randomly assigned to a player with the lowest match-points.
 
-If there are an odd number of players, assign a bye ( free win ). For the first round it would be assigned randomly. For subsequent rounds, the bye will be randomly assigned to a player with the lowest match-points.
+**Round 2 onwards:**
+- Pair based on match point total, if there are an odd number of players with the same match point total, one player from the next highest point total is selected to play with the players of the higher point total. 
 
-Round 2 onwards:
-Pair based on match point total, if there are an odd number of players with the same match point total, one player from the next highest point total is selected to play with the players of the higher point total. 
+**Tiebreakers will use the following player stats to distinguish between players in the following order**
 
-Tiebreakers will use the following player stats to distinguish between players in the following order
+- Opponent Match Win Percentage (OMW): Summation of opponent match win percentage divided by number of opponents
 
-Opponent Match Win Percentage (OMW): Summation of opponent match win percentage divided by number of opponents
+- Opponent Game Win Percentage (OGW): Summation of opponent game win percentage divided by number of opponents
 
-Opponent Game Win Percentage (OGW): Summation of opponent game win percentage divided by number of opponents
-
-Game Win Percentage (GW%): Personal game win percentage
+- Game Win Percentage (GW%): Personal game win percentage
 
 ## Cloud Deployment
 
