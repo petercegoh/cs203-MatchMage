@@ -2,12 +2,7 @@
 
 ## Overview
 
-### Solution
 **MatchMage** is a tournament management system solution created for **Magic: The Gathering (MTG)**. With a huge player base and tournaments that can scale to over 7500 players, the competitive structure requires a robust system for implementing **scalability**, calculating **tiebreaking**, and **real-time data management**.
-
-![home1](images/home1.png)
-
-### Features
 
 **Users** can create accounts, join, leave and view the interim and final results of tournaments. **Admins** can create, update, delete and manage the rounds of a tournament.
 
