@@ -6,13 +6,16 @@
 
 **Users** can create accounts, join, leave and view the interim and final results of tournaments. **Admins** can create, update, delete and manage the rounds of a tournament.
 
+*Home Screen*
 ![home2](images/home2.png)
 
 
+*Login Screen*
 ![login](images/login.png)
 
 
-![flow](images/t2.png)
+*Tournament View*
+![t2](images/t2.png)
 
 ## Tech Stack
 FrontEnd: Flask
@@ -43,7 +46,7 @@ Deployment: GitLab, Docker, ECR, EKS, Fargate, EC2
 
 ![db](images/db.png)
 
-Firebase implement a hierarchical database structure. A collection contains documents. In turn, documents contain document-specific data in fields, or other subcollections. Firebase's real-time functionality synchronizes data instantly across all connected clients whenever there’s a change in the database, making it ideal for use cases like live scoreboards.
+Firebase implements a hierarchical database structure. A collection contains documents. In turn, documents contain document-specific data in fields, or other subcollections. Firebase's real-time functionality synchronizes data instantly across all connected clients whenever there’s a change in the database, making it ideal for use cases like live scoreboards.
 
 
 ## Cloud Deployment
