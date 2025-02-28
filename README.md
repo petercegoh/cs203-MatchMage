@@ -19,9 +19,13 @@
 
 ## Tech Stack
 FrontEnd: Flask
+
 Backend: Spring Boot, Mockito
+
 Database: Firebase
+
 Deployment: GitLab, Docker, ECR, EKS, Fargate, EC2
+
 
 ![flow](images/flow.png)
 
