@@ -38,6 +38,14 @@ Deployment: GitLab, Docker, ECR, EKS, Fargate, EC2
 
 - Game Win Percentage (GW%): Personal game win percentage
 
+
+## Database
+
+![db](images/db.png)
+
+Firebase implement a hierarchical database structure. A collection contains documents. In turn, documents contain document-specific data in fields, or other subcollections. Firebase's real-time functionality synchronizes data instantly across all connected clients whenever there’s a change in the database, making it ideal for use cases like live scoreboards.
+
+
 ## Cloud Deployment
 
 ![flow](images/deployment.png)
